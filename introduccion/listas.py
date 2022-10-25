@@ -38,3 +38,25 @@ print(letras)
 
 print(len(letras))
 print(len(pares))
+
+
+valor = input()
+print(valor)
+
+
+valor = input("Introduce un valor: ")  # Podemos mostrar un mensaje
+print(valor)
+
+
+valor = input("Introduce un número entero: ")
+print(valor + 50)
+
+
+
+valor = int(input("Introduce un número entero: "))
+print(valor * 2)
+
+
+
+valor = float(input("Introduce un número entero o flotante: "))
+print(valor * 2)
