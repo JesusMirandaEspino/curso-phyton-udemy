@@ -41,3 +41,11 @@ nota_2 = 5
 nota_media = (nota_1 + nota_2) / 2
 
 print(nota_media)
+
+
+print(123)
+print(-21)
+print(3.14)
+print(999.999)
+print(100)
+print(777)
