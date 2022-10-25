@@ -49,3 +49,10 @@ print(3.14)
 print(999.999)
 print(100)
 print(777)
+
+# Variables del ejercicio (no las modifiques)
+nota_1 = 10
+nota_2 = 6
+
+# Calcula correctamente la nota_final (no modifiques el nombre de la variable)
+nota_final = 7.6
