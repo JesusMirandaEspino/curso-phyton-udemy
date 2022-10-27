@@ -114,3 +114,7 @@ a = 5
 a **= 3
 print(a)
 
+print(10 * 5 - 25 == 25)
+
+
+print(not True and False)
