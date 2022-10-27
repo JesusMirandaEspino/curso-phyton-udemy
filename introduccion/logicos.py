@@ -43,3 +43,37 @@ print(False / 5)
 print(True * False)
 
 
+# Not(Negación lógica)
+# Niega un valor o expresión lógica:
+print(not True)
+print(not False)
+print(not True == False)
+
+# And(Conjunción lógica)
+# Devuelve verdadero sólo si se cumplen todas las condiciones:
+print(True and True)
+print(True and False)
+print(False and True)
+print(False and False)
+
+Fa = 45
+print(a > 10 and a < 20)
+
+c = "Hola Mundo"
+print(len(c) >= 20 and c[0] == "H")
+
+# Or(Disyunción lógica)
+# Devuelve verdadero si se cumple como mínimo una condición:
+print(True or True)
+
+print(True or False)
+
+print(False or True)
+
+print(False or False)
+
+c = "OTRA COSA"
+print(c == "EXIT" or c == "FIN" or c == "SALIR")
+
+c = "Lector"
+print(c[0] == "H" or c[0] == "h")
