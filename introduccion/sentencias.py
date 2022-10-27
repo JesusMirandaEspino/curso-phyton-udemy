@@ -104,3 +104,31 @@ if nota < 5:
 
 if True:
     pass
+
+
+opcion = input()
+
+if opcion == "A":
+    print("Opción A")
+elif opcion == "B":
+    print("Opción B")
+elif opcion == "C":
+    print("Opción C")
+else:
+    print("Opcion por defecto")
+
+
+
+
+
+opcion = input()
+
+match opcion:
+    case "A":
+        print("Opción A")
+    case "B":
+        print("Opción B")
+    case "C":
+        print("Opción C")
+    case _:
+        print("Opción por defecto")
