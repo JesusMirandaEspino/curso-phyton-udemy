@@ -77,3 +77,40 @@ print(c == "EXIT" or c == "FIN" or c == "SALIR")
 
 c = "Lector"
 print(c[0] == "H" or c[0] == "h")
+
+
+a = 10
+b = 5
+
+print(a * b - 2**b >= 20 and not (a % b) != 0)
+
+# Suma en asignación
+a = 5
+a += 5
+print(a)
+
+# Resta en asignación
+a = 5
+a -= 10
+print(a)
+
+# Producto en asignación
+a = 5
+a *= 2
+print(a)
+
+# División en asignación
+a = 5
+a /= 2
+print(a)
+
+# Módulo en asignación
+a = 5
+a %= 2
+print(a)
+
+# Potencia en asignación
+a = 5
+a **= 3
+print(a)
+
