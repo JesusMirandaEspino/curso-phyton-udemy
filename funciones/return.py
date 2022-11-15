@@ -34,3 +34,15 @@ cadena, numero, lista = test()
 print(cadena)
 print(numero)
 print(lista)
+
+
+# Envío de valores
+# Para comunicarse con el exterior las funciones no sólo pueden devolver valores, también pueden recibir información:
+def suma(a, b):  # valores que se reciben
+    return a + b
+
+# Una cadena
+# Ahora podemos enviar dos valores a la función:
+
+resultado = suma(2, 5)  # valores que se envían
+print(resultado)
