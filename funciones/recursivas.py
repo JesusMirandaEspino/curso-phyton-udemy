@@ -28,3 +28,20 @@ def factorial(num):
     return num
 
 print(factorial(5))
+
+
+def doblar():
+    global num
+    num *= 2
+
+
+num = 5
+doblar()
+print(num)
+
+
+def test(num):
+   return num, num*2, num*4
+
+
+test(5)
