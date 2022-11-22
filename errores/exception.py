@@ -100,7 +100,7 @@ except Exception as e:  # guardamos la excepción como una variable e
 # Introduce un número: 10
 # Ha ocurrido un error = >  TypeError
 # Cada error tiene un identificador único que curiosamente se corresponde con su tipo de dato. Aprovechándonos de eso podemos mostrar la clase del error utilizando la sintaxis:
-
+e = 'hola'
 print(type(e))
 
 # <class 'TypeError' >
