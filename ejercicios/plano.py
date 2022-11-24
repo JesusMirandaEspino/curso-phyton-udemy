@@ -26,3 +26,22 @@ class punto:
     def distancia(self, p):
         d = math.sort( (p.x - self.x)**2 + (p.y - self.y)**2 )
         print("La distancia entre los puentos {} y {} es {}".format(self, p, d))
+
+class rectangulo:
+    def __init__(self,PInicial=Punto(), FFinal=Punto() ):
+        self.PInicial = pInicial
+        self.FFinal = fFinal
+
+    def base(self):
+        self.base = self.PFinal.x - self.PInicial.x
+        print("La base del rectangulo es {}".format(self.base))
+
+    def altura(self):
+        self.altura = self.PFinal.y - self.PInicial.y
+        print("La altura del rectangulo es {}".format(self.altura))
+
+    def area(self):
+        self.base = self.PFinal.x - self.PInicial.x
+        self.altura = self.PFinal.y - self.PInicial.y
+        self.area = self.base * self.altura
+        print("El area del rectangulo es {}".format(self.area))
