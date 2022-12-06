@@ -1,0 +1,11 @@
+setup.py
+test.py
+Mensajes.egg-info/PKG-INFO
+Mensajes.egg-info/SOURCES.txt
+Mensajes.egg-info/dependency_links.txt
+Mensajes.egg-info/top_level.txt
+mensajes/__init__.py
+mensajes/adios/__init__.py
+mensajes/adios/despedidas.py
+mensajes/hola/__init__.py
+mensajes/hola/saludos.py
