@@ -7,9 +7,6 @@ def saludar():
     print("Hola, te estoy saludando desde la función saludar() "
         "del módulo saludos")
 
-
-
-
 saludar()
 # Para importar todas las funciones con la sintaxis from import debemos poner un asterisco:
 
