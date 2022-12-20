@@ -1,5 +1,4 @@
 from io import open
-
 fichero = open( 'persona.txt', 'r', encoding='utf8' )
 lineas = fichero.readlines()
 
