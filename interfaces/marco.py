@@ -20,7 +20,6 @@ frame.config(bg="lightblue")
 # la raíz se adapta al frame que contiene
 frame.config(width=480, height=320)
 
-root.mainloop()
 # También podemos añadir la configuración al crear el frame:
 
 
@@ -55,3 +54,5 @@ frame.pack(fill="x")                # ancho como el padre
 frame.pack(fill="y")                # alto como el padre
 frame.pack(fill="both")             # ambas opciones
 frame.pack(fill="both", expand=1)   # expandirse para ocupar el espacio
+
+root.mainloop()
