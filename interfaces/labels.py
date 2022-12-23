@@ -4,8 +4,6 @@ root = Tk()
 
 frame = Frame(root, width=480, height=320)
 frame.pack()
-label = Label(frame,text="¡Hola Mundo!")
-
 
 label = Label(root, text="¡Otra etiqueta!")
 label.pack(anchor=CENTER)
