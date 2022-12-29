@@ -23,9 +23,15 @@ helpmenu.add_command(label="Ayuda")
 helpmenu.add_separator()
 helpmenu.add_command(label="Acerca de...")
 
+selecmenu = Menu(menubar, tearoff=0)
+editmenu.add_command(label="Seleccionar")
+editmenu.add_command(label="Expandir")
+editmenu.add_command(label="Reducir")
+
 
 menubar.add_cascade(label="Archivo", menu=filemenu)
 menubar.add_cascade(label="Editar", menu=editmenu)
+menubar.add_cascade(label="Seleccion", menu=editmenu)
 menubar.add_cascade(label="Ayuda", menu=helpmenu)
 
 root.mainloop()
