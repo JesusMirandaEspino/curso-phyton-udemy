@@ -18,7 +18,14 @@ editmenu.add_command(label="Cortar")
 editmenu.add_command(label="Copiar")
 editmenu.add_command(label="Pegar")
 
+helpmenu = Menu(menubar, tearoff=0)
+helpmenu.add_command(label="Ayuda")
+helpmenu.add_separator()
+helpmenu.add_command(label="Acerca de...")
+
+
 menubar.add_cascade(label="Archivo", menu=filemenu)
 menubar.add_cascade(label="Editar", menu=editmenu)
+menubar.add_cascade(label="Ayuda", menu=helpmenu)
 
 root.mainloop()
