@@ -18,6 +18,12 @@ texto = Text(root)
 texto.pack(fill='both', expand=1)
 texto.config(padx=6, pady=4, bd=0, font=("Consolas", 12))
 
+# Monitor inferior
+mensaje = StringVar()
+mensaje.set('Bienvenido a tu editor')
+monitor = Label(root, textvar=mensaje, justify='right')
+monitor.pack(side='left')
+
 # Menu y bucle de la aplicación
 root.config(menu=menubar)
 root.mainloop()
