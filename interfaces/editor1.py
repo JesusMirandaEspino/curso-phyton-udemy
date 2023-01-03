@@ -2,13 +2,29 @@ from tkinter import *
 root = Tk()
 root.title("Mi editor")
 
+
+def nuevo():
+    mensaje.set('Nuevo fichero')
+
+
+def abrir():
+    mensaje.set('Nuevo fichero')
+
+
+def guardar():
+    mensaje.set('Guardar fichero')
+
+
+def guardar_como():
+    print("Guardar fichero como")
+
 # Menú superior
 menubar = Menu(root)
 filemenu = Menu(menubar, tearoff=0)
-filemenu.add_command(label="Nuevo")
-filemenu.add_command(label="Abrir")
-filemenu.add_command(label="Guardar")
-filemenu.add_command(label="Guardar como")
+filemenu.add_command(label="Nuevo", command=nuevo)
+filemenu.add_command(label="Abrir", command=abrir)
+filemenu.add_command(label="Guardar", command=guardar)
+filemenu.add_command(label="Guardar como", command=guardar_como)
 filemenu.add_separator()
 filemenu.add_command(label="Salir", command=root.quit)
 menubar.add_cascade(label="Archivo", menu=filemenu)
