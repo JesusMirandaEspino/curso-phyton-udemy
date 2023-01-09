@@ -51,31 +51,46 @@ def agregar_plato():
     for categoria in categorias:
         print("[{}] {} ".format(categoria[0], categoria[1]))
 
-    categoria_usuario = int(input("Seleccione"))
+    print("Seleccione ")
+    categoria_usuario = int(input())
 
-    plato = input("Ingrese el platillo")
-
-    conexion = sqlite3.connect('restaurante.db')
-    cursor = conexion.cursor()
+    plato = input("Ingrese el platillo ")
 
     try:
         cursor.execute(" INSERT INTO plato VALUES (NULL, '{}', {}) ".format(plato, categoria_usuario))
     except sqlite3.IntegrityError:
         print("El plato '{}' ya existe. ".format(plato))
     else:
-        print("El plato '{}' ha sido creada correctamente. ".format(categoria))
+        print("El plato '{}' ha sido creada correctamente. ".format(plato))
 
+    conexion.commit()
+    conexion.close()
+
+def mostrar_menu():
+
+    conexion = sqlite3.connect('restaurante.db')
+    cursor = conexion.cursor()
+
+    categorias = cursor.execute("SELECT * FROM categoria").fetchall()
+
+    for categoria in categorias:
+        print(categoria[1])
+        platos = cursor.execute("SELECT * FROM plato WHERE categoria_id = {} ".format(categoria[0])).fetchall()
+        for plato in platos:
+            print("     {}".format(plato[1]))
+    print("pulse para salir...")
+    salir = input()
+    conexion.close()
 
 crear_db()
-
-
 
 while True:
     print('Bienvenido al gestor del restaurante')
     print('Elige una opcion')
     print('1.- Ingresar categoria ')
     print('2.- Ingresar platillo ')
-    print('3.- Salir del programa ')
+    print('3.- Ver el menu')
+    print('4.- Salir del programa ')
     option = input()
 
     if option == '1':
@@ -83,6 +98,8 @@ while True:
     elif option == '2':
         agregar_plato()
     elif option == '3':
+        mostrar_menu()
+    elif option == '4':
         break
     else:
         print('Option incorrecta')
