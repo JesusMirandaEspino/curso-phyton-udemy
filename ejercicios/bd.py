@@ -24,4 +24,16 @@ def crear_db():
     conexion.close()
 
 
+def agregar_categoria():
+    categoria = input('Ingrese nombre de la Categoria')
+    conexion = sqlite3.connect('restaurante.db')
+    cursor = conexion.cursor()
+
+    cursor.execute(" INSERT INTO categoria VALUES (NULL, '{}') ".format(categoria))
+
+    conexion.commit()
+    conexion.close()
+
+
 crear_db()
+agregar_categoria()
