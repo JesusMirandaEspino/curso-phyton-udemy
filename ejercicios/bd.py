@@ -25,7 +25,7 @@ def crear_db():
 
 
 def agregar_categoria():
-    categoria = input('Ingrese nombre de la Categoria')
+    categoria = input('Ingrese nombre de la Categoria: ')
     conexion = sqlite3.connect('restaurante.db')
     cursor = conexion.cursor()
 
@@ -36,4 +36,19 @@ def agregar_categoria():
 
 
 crear_db()
-agregar_categoria()
+
+
+
+while True:
+    print('Bienvenido al gestor del restaurante')
+    print('Elige una opcion')
+    print('1.- Ingresar categoria ')
+    print('2.- Salir del programa ')
+    option = input()
+
+    if option == '1':
+        agregar_categoria()
+    elif option == '2':
+        break
+    else:
+        print('Option incorrecta')
