@@ -8,5 +8,13 @@ root.resizable(0,0)
 root.config(bd=25,relief='sunken')
 
 Label(root, text='   Bar Cheeto   ', fg='darkgreen', font=( 'Times New Roman', 28, 'bold italic' ) ).pack()
+Label(root, text='   Menu del dia   ', fg='green', font=('Times New Roman', 24, 'bold italic')).pack()
+Label(text='').pack()
 
+conexion = sqlite3.connect('restaurante.db')
+cursor = conexion.cursor()
+
+
+
+conexion.close()
 root.mainloop()
