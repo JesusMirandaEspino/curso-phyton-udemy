@@ -30,3 +30,4 @@ globals().keys()
 
 
 globals()['lista']
+
