@@ -24,3 +24,9 @@ def hola2():
         return "Hola!"
     print(globals())  # Mostramos el ámbito global
 hola2()
+
+
+globals().keys()
+
+
+globals()['lista']
