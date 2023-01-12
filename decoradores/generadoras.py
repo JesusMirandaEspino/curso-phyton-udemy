@@ -9,3 +9,7 @@ def pares(n):
             yield numero
 pares(10)
 
+for numero in pares(10):
+    print(numero)
+
+[numero for numero in pares(10)]
