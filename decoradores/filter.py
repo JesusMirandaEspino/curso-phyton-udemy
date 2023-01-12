@@ -36,3 +36,41 @@ menores = filter(lambda persona: persona.edad < 18, personas)
 
 for menor in menores:
     print(menor)
+
+
+def doblar(numero):
+    return numero*2
+
+numeros = [2, 5, 10, 23, 50, 33]
+print(list(map(doblar, numeros)))
+print(list( map(lambda x: x*2, numeros) ))
+
+a = [1, 2, 3, 4, 5]
+b = [6, 7, 8, 9, 10]
+otra_lista = list( map(lambda x,y : x*y, a,b) )
+print(otra_lista)
+
+c = [11, 12, 13, 14, 15]
+print(list( map(lambda x,y,z : x*y*z, a,b,c) ))
+
+def incrementar(p):
+    p.edad += 1
+    return p
+
+personas = map(incrementar, personas)
+
+for persona in personas:
+    print(persona)
+
+
+personas = [
+    Persona("Juan", 35),
+    Persona("Marta", 16),
+    Persona("Manuel", 78),
+    Persona("Eduardo", 12)
+]
+
+personas = map(lambda p: Persona(p.nombre, p.edad+1), personas)
+
+for persona in personas:
+    print(persona)
