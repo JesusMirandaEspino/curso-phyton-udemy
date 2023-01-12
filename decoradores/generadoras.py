@@ -29,3 +29,11 @@ print(next(lista_iterable))
 print(next(lista_iterable))
 print(next(lista_iterable))
 print(next(lista_iterable))
+
+
+cadena = "Hola"
+cadena_iterable = iter(cadena)
+print( next(cadena_iterable) )
+print( next(cadena_iterable) )
+print( next(cadena_iterable) )
+print( next(cadena_iterable) )
