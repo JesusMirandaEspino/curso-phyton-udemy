@@ -21,3 +21,19 @@ print( encontrado.end() )
 print( encontrado.span() )   
 # Cadena sobre la que se ha realizado la búsqueda
 print( encontrado.string )   
+
+
+texto1 = "Hola mundo"
+print(re.match('Hola', texto1))
+
+texto2 = "Vamos a dividir esta cadena"
+print(re.split(' ', texto2))
+
+texto3 = "Hola amigo"
+print(re.sub('amigo', 'amiga', texto3))
+
+texto4 = "hola adios hola hola"
+print(re.findall('hola', texto4))
+
+
+print(len(re.findall('hola', texto4)))
