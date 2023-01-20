@@ -62,6 +62,18 @@ def ingresar_nuevo():
     # Finalmente bucle de la aplicación
 
 
-ingresar_nuevo()
+def menu_principal():
 
+    Label(root, text="1.- Ingresar Nuevo").pack()
+    Entry(root, justify="center").pack()
+
+    Label(root, text="2 Actualizar").pack()
+    Entry(root, justify="center").pack()
+
+    frame = Frame(root, width=480, height=320)
+    frame.pack()
+
+    Button(root, text="Ingresar Nuevo", command=ingresar_nuevo).pack(side="left")
+
+menu_principal()
 root.mainloop()
