@@ -16,3 +16,22 @@ print('--------------')
 print(np.arange(-3, 3))
 print('-----------------')
 print(np.arange(0, 20, 5))
+
+
+# Dos arrays
+arr_1 = np.array([1, 2, 3, 4])
+arr_2 = np.array([5, 6, 7, 8])
+
+# Los sumamos
+print(arr_1 + arr_2)
+print(arr_1 - arr_2)
+print(arr_1 * arr_2)
+print(arr_1 * 10)
+print(arr_1 * np.array(10))
+print(arr_1 / arr_2)
+print(arr_1 / 2)
+print(1 / arr_1)
+print(arr_1 ** arr_2)
+
+
+
