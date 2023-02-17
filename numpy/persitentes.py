@@ -34,4 +34,17 @@ print(arrays)
 print(arrays['arr_1'])
 print(arrays['arr_2'])
 
+# creamos un array de prueba
+arr_3 = np.random.randint(-10, 10, [3, 3])
+print(arr_3)
 
+# lo guardamos en un fichero de texto
+np.savetxt('arr_3.txt', arr_3)
+
+# lo borramos de la memoria
+del(arr_3)
+
+# lo cargamos indicando el separador (si lo hemos cambiado)
+arr_3 = np.loadtxt('arr_3.txt', delimiter=',')
+
+print(arr_3)
