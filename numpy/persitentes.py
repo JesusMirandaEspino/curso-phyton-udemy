@@ -22,3 +22,16 @@ print(arr_2)
 # utilizaremos savez para guardar de forma comprimida con la extensión .npz
 # debemos especificar una clave para cada array que queramos guardar
 np.savez('arrays.npz', arr_1=arr_1, arr_2=arr_2)
+
+# los borramos de la memoria
+del(arr_1)
+del(arr_2)
+
+# los cargamos desde el fichero binario
+arrays = np.load('arrays.npz')
+print(arrays)
+
+print(arrays['arr_1'])
+print(arrays['arr_2'])
+
+
