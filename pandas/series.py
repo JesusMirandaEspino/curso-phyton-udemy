@@ -50,6 +50,4 @@ print(ingresos - gastos)
 
 print(espacio)
 print(type(total))
-print()
-print()
-print()
+
