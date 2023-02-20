@@ -9,6 +9,66 @@ espacio = '***********************'
 print(df)
 print(type(df))
 print(espacio)
+
+print(df['X'])
+print(espacio)
+
+print(type(df['X']))
+print(espacio)
+
+print(df[['Y', 'Z']])
+print(espacio)
+
+df['TOTAL'] = df['W'] + df['X'] + df['Y'] + df['Z']
+print(df)
+print(espacio)
+
+df.drop('TOTAL', axis=1)
+print(df)
+print(espacio)
+
+df.drop('TOTAL', axis=1, inplace=True)
+print(df)
+print(espacio)
+
+df.drop('D', axis=0)
+
+print(df.loc['C'])
+print(espacio)
+
+print(df.iloc[2])
+print(espacio)
+
+print()
+print(espacio)
+
+print(df.loc['C','Z'])
+print(espacio)
+
+print(df.loc[['A', 'B'], ['W', 'Y']])
+print(espacio)
+
+print(df > 0)
+print(espacio)
+
+print(df[df['X'] > 0])
+print(espacio)
+
+print(df[df['X'] > 0][['Y', 'Z']])
+print(espacio)
+
+print(df[(df['X'] > 0) | (df['Z'] < 0)])
+print(espacio)
+
+print(df[(df['X']>0) | (df['Z'] < 0)][['W','Y']])
+print(espacio)
+
+print()
+print()
+print()
+print()
+print()
+print()
 print()
 print()
 print()
