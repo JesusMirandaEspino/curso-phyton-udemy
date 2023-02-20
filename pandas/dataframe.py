@@ -5,7 +5,6 @@ array = np.random.uniform(-10, 10, size=[4,4])
 df = pd.DataFrame(array, index=['A','B','C','D'], columns=['W','X','Y','Z'])
 espacio = '***********************'
 
-
 print(df)
 print(type(df))
 print(espacio)
@@ -63,18 +62,19 @@ print(espacio)
 print(df[(df['X']>0) | (df['Z'] < 0)][['W','Y']])
 print(espacio)
 
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
+array = np.random.uniform(-10, 10, size=[4, 4])
+df = pd.DataFrame(array, index=['A', 'B', 'C', 'D'], columns=['W', 'X', 'Y', 'Z'])
+df['Códigos'] = ['AA', 'BB', 'CC', 'DD']
+
+print(espacio)
+print(df)
+
+df.set_index('Códigos')
+print(df)
+print(espacio)
+
+df.set_index('Códigos', inplace=True)
+print(df)
+print(espacio)
+
+
