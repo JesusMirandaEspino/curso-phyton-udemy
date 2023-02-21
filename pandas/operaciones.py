@@ -41,6 +41,50 @@ print(divisor)
 print(df['cadenas'].unique())
 print(divisor)
 
+# Contador de valores únicos de una columna
+print(df['cadenas'].nunique())
+print(divisor)
 
+
+# Dataframe con los de valores únicos y su contador de una columna
+print(df['cadenas'].value_counts())
+print(divisor)
+
+# Método interno de las Series columna
+print(df['decimales'].sum())
+print(divisor)
+
+# Aplicar una función predefinida
+print(df['cadenas'].apply(len))
+print(divisor)
+
+# Aplicar una función definida
+def doblar(n):
+    return n*2
+print(df['enteros'].apply(doblar))
+print(divisor)
+
+# Aplicar una función anónima
+print(df['enteros'].apply(lambda n: n/3))
+print(divisor)
+
+# Borrar permanentemente una columna
+del df['decimales']
 print(df)
+print(divisor)
+
+# Índices de las columnas
+print(df.columns)
+print(divisor)
+
+# Índice de las filas
+print(df.index)
+print(divisor)
+
+# Ordenar por columna (inplace=False por defecto)
+print(df.sort_values(by='enteros'))
+print(divisor)
+
+# Ordenar por columna inversamente (inplace=False por defecto)
+print(df.sort_values(by='enteros', ascending=False))
 print(divisor)
